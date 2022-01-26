@@ -16,7 +16,7 @@ function Layout({ children, title, description }) {
 			<Container
 				maxW="container.sm"
 				display="flex"
-				minH={{ base: 'auto', md: '200vh' }}
+				minH={{ base: 'auto', md: '100vh' }}
 				px={{ base: 4, md: 0 }}
 			>
 				<VStack flex={1} spacing={16} alignItems="stretch" w="full">

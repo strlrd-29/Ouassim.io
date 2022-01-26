@@ -45,10 +45,7 @@ export default function Hero() {
 	return (
 		<VStack alignItems="flex-start">
 			<Heading>Hi, my name is Ouassim</Heading>
-			<Text
-				fontSize="lg"
-				color={colorMode === 'dark' ? '#888888' : '#444444'}
-			>
+			<Text color={colorMode === 'dark' ? '#f5f6f7' : 'black'}>
 				I&apos;m a front-end web developer based in Algeria. I love to
 				create beautiful and fast web applications using React /
 				Next.js.

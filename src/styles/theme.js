@@ -10,6 +10,10 @@ const styles = {
 	})
 }
 
+const textColor = (props) => ({
+	color: mode('#444444', '#888888')(props)
+})
+
 const linkRing = (props) => ({
 	_focus: {
 		ringColor: mode('gray.400', 'gray.700')(props),
@@ -40,6 +44,14 @@ const theme = extendTheme({
 		'6xl': '48px'
 	},
 	components: {
+		Text: {
+			baseStyle: (props) => ({
+				...textColor(props),
+				fontFamily: 'body',
+				fontSize: 'lg',
+				lineHeight: '1.5'
+			})
+		},
 		Link: {
 			variants: {
 				'footer-link': ({ colorMode }) => ({
