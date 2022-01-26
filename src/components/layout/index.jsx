@@ -18,10 +18,15 @@ function Layout({ children, title, description }) {
 				display="flex"
 				minH={{ base: 'auto', md: '200vh' }}
 				px={{ base: 4, md: 0 }}
-				centerContent
 			>
 				<VStack flex={1} spacing={16} alignItems="stretch" w="full">
-					<VStack spacing={16} flex={1} w="full" as="main">
+					<VStack
+						spacing={12}
+						flex={1}
+						alignItems="flex-start"
+						w="full"
+						as="main"
+					>
 						{children}
 					</VStack>
 					<Footer />

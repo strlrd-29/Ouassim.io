@@ -1,5 +1,6 @@
+import Hero from '@/components/Hero'
 import Layout from '@/components/layout'
-import { Heading, Link } from '@chakra-ui/react'
+import Section from '@/components/Section'
 
 export default function Home() {
 	return (
@@ -7,8 +8,10 @@ export default function Home() {
 			title="Ouassim - Developer, Designer."
 			description="Front-end developer, Javascript enthusiast, and in love with React"
 		>
-			<Heading>Hello World</Heading>
-			<Link>Next JS</Link>
+			<Hero />
+			<Section header={'Blog Posts'}>
+				<p>This is the blog post section </p>
+			</Section>
 		</Layout>
 	)
 }
