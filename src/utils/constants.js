@@ -23,3 +23,52 @@ export const navLinks = [
 		text: 'Bookmarks'
 	}
 ]
+
+export const firstGroup = [
+	{
+		href: '/',
+		text: 'Home'
+	},
+	{
+		href: '/about',
+		text: 'About'
+	},
+	{
+		href: '/blog',
+		text: 'Blog'
+	}
+]
+
+export const secondGroup = [
+	{
+		href: FACEBOOK_PROFILE,
+		text: 'Facebook'
+	},
+	{
+		href: INSTAGRAM_PROFILE,
+		text: 'Instagram'
+	},
+	{
+		href: LINKEDIN_PROFILE,
+		text: 'LinkedIn'
+	},
+	{
+		href: GITHUB_PROFILE,
+		text: 'Github'
+	}
+]
+
+export const thirdGroup = [
+	{
+		href: '/bookmarks',
+		text: 'Bookmarks'
+	},
+	{
+		href: '/uses',
+		text: 'Uses'
+	},
+	{
+		href: '/books',
+		text: 'Books'
+	}
+]
