@@ -1,11 +1,17 @@
+import Head from 'next/head'
+
 import { Container, VStack } from '@chakra-ui/react'
 
 import Header from './Header'
 import Footer from './Footer'
 
-function Layout({ children }) {
+function Layout({ children, title, description }) {
 	return (
 		<>
+			<Head>
+				<title>{title}</title>
+				<meta name="description" content={description} />
+			</Head>
 			<Header />
 			<Container
 				maxW="container.sm"
