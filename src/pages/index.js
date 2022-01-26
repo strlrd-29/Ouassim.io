@@ -1,10 +1,11 @@
-import { Heading } from '@chakra-ui/react'
+import Layout from '@/components/layout'
+import { Heading, Link } from '@chakra-ui/react'
 
 export default function Home() {
 	return (
-		<>
+		<Layout>
 			<Heading>Hello World</Heading>
-			<p>Next JS</p>
-		</>
+			<Link>Next JS</Link>
+		</Layout>
 	)
 }
