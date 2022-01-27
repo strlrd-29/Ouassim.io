@@ -8,7 +8,7 @@ export default function InstagramCard({ title, description, path, url }) {
 			<Link href={url} isExternal>
 				<AspectRatio ratio={1.91 / 1}>
 					<Image
-						src="/media/instagram.png"
+						src={path}
 						alt={title}
 						width="100%"
 						height="100%"
