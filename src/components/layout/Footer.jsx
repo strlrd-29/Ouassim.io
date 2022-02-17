@@ -3,6 +3,8 @@ import { VStack, Link, Text, chakra, Divider, Stack } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import NextLink from 'next/link'
 
+import VercelCallout from '../vercelCallout'
+
 import { firstGroup, secondGroup, thirdGroup } from '@/utils/constants'
 
 export default function Footer() {
@@ -61,6 +63,23 @@ export default function Footer() {
 						</NextLink>
 					))}
 				</VStack>
+			</Stack>
+			<Stack
+				w="full"
+				direction={{ base: 'column', md: 'row' }}
+				alignItems="center"
+				justifyContent={{ base: 'center', md: 'space-between' }}
+				spacing={0}
+				gridRowGap={4}
+			>
+				<Text color="gray.400" fontSize="md">
+					©{' '}
+					<chakra.span as="time" color="#14b8a6">
+						{new Date().getFullYear()}
+					</chakra.span>{' '}
+					Ouassim Ghribi
+				</Text>
+				<VercelCallout />
 			</Stack>
 		</VStack>
 	)
