@@ -1,6 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
+import readingTime from 'reading-time'
 
 export const getBlogPosts = () => {
     const result = []
@@ -21,8 +22,19 @@ export const getBlogPosts = () => {
             description,
             date,
             bColor,
-            content
+            content,
+            readingTime: readingTime(content).text
         })
     })
-    return result
+    return result.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+}
+
+export const getRecentBlogPosts = async (count) => {
+    const posts = getBlogPosts()
+
+    const recentPosts = posts
+        .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+        .slice(0, count)
+
+    return recentPosts
 }

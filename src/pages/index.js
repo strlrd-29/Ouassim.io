@@ -1,5 +1,5 @@
 import Hero from '@/components/Hero'
-import Layout from '@/components/layout'
+import Layout from '@/components/Container'
 import BlogSection from '@/components/BlogSection'
 import InstagramSection from '@/components/InstagramSection'
 
