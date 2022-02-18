@@ -1,10 +1,15 @@
-import { Box, Heading, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Heading, Text, Link, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 export default function BlogPost({ title, description, date, bColor, slug }) {
     return (
         <NextLink href={`/blog/${slug}`} passHref>
-            <a>
+            <Link
+                w="full"
+                _hover={{
+                    textDecoration: 'none'
+                }}
+            >
                 <Box
                     cursor="pointer"
                     border="2px"
@@ -19,6 +24,7 @@ export default function BlogPost({ title, description, date, bColor, slug }) {
                     _hover={{
                         transform: 'scale(1.01)'
                     }}
+                    w="full"
                     transition="all .2s ease-in-out"
                 >
                     <Heading size="md" mb={4}>
@@ -27,7 +33,7 @@ export default function BlogPost({ title, description, date, bColor, slug }) {
                     <Text fontSize="lg">{description}</Text>
                     <Text>{date}</Text>
                 </Box>
-            </a>
+            </Link>
         </NextLink>
     )
 }

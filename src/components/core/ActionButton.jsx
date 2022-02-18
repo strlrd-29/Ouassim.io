@@ -24,7 +24,7 @@ const ActionButton = React.forwardRef((props, ref) => {
                 pr: 3,
                 pl: 3
             }}
-            // {...props}
+            {...props}
         >
             {props.children}
         </Button>
