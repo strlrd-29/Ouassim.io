@@ -13,7 +13,7 @@ function Layout(props) {
     const meta = {
         title: 'Ouassim - Developer, Designer.',
         description: `Front-end developer, Javascript enthusiast, and in love with React`,
-        image: 'https://leerob.io/static/images/banner.png',
+        image: 'https://ouassim-io.vercel.app/og_image/ouassim.png',
         type: 'website',
         ...customMeta
     }

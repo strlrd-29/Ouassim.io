@@ -5,10 +5,12 @@ import {
     Link,
     Kbd,
     useColorModeValue,
-    useColorMode
+    useColorMode,
+    Flex
 } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
 import NextImage from 'next/image'
+import { Hash } from 'phosphor-react'
 import slugify from 'slugify'
 
 const Pre = (props) => <chakra.div my="2em" borderRadius="sm" {...props} />
@@ -59,18 +61,33 @@ const LinkedHeading = (props) => {
             href={`#${slug}`}
             name={slug}
             role="group"
-            textDecoration={'none'}
+            textDecoration="none"
+            _hover={{ textDecoration: 'none' }}
         >
-            <Box
+            <Flex
+                alignItems="center"
                 {...props}
                 d="inline"
-                color={useColorModeValue('gray.700', 'white')}
+                color={useColorModeValue('#333333', '#eaeaea')}
                 fontFamily="heading"
-                fontSize={['sm', 'md', 'lg', 'xl']}
+                fontSize={{ base: 'lg', md: '3xl' }}
                 fontWeight="bold"
+                position="relative"
             >
+                <Box
+                    display="inline"
+                    visibility={'hidden'}
+                    _groupHover={{ visibility: 'visible' }}
+                    // ml={4}
+                    position="absolute"
+                    left={-8}
+                    top={'50%'}
+                    transform="translateY(-50%)"
+                >
+                    <Hash />
+                </Box>
                 {props.children}
-            </Box>
+            </Flex>
         </Link>
     )
 }
@@ -81,7 +98,10 @@ const Image = (props) => {
             {...props}
             layout="responsive"
             loading="lazy"
-            quality={100}
+            placeholder="blur"
+            blurDataURL
+            width={1080}
+            height={810}
         />
     )
 }
@@ -118,19 +138,25 @@ const MDXComponents = {
     th: THead,
     td: TData,
     a: Anchor,
-    p: (props) => <chakra.p apply="mdx.p" {...props} />,
+    p: (props) => (
+        <chakra.p
+            apply="mdx.p"
+            {...props}
+            fontSize={{ base: 'md', md: 'lg' }}
+        />
+    ),
     ul: (props) => (
         <chakra.ul px={{ base: 4, md: 0 }} apply="mdx.ul" {...props} />
     ),
     ol: (props) => <chakra.ol apply="mdx.ul" {...props} />,
-    li: (props) => <chakra.li pb="4px" {...props} />,
+    li: (props) => <chakra.li pb="4px" ml={4} {...props} />,
     blockquote: (props) => (
         <Box>
             <Alert
                 as="blockquote"
                 role="none"
                 rounded="4px"
-                status="warning"
+                status="success"
                 variant="left-accent"
                 {...props}
                 w="unset"
