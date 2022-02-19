@@ -24,12 +24,12 @@ const linkRing = (props) => ({
 const theme = extendTheme({
     config: {
         initialColorMode: 'dark',
-        useSystemColorMode: false
+        useSystemColorMode: true
     },
     styles,
     fonts: {
         body: '/fonts/inter-var-latin.woff2',
-        heading: 'HK Grotesk'
+        heading: '/fonts/ibm-plex-sans-var.woff2'
     },
     fontSizes: {
         xs: '10px',
