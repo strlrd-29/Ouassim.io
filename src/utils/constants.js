@@ -70,6 +70,10 @@ export const thirdGroup = [
     {
         href: '/books',
         text: 'Books'
+    },
+    {
+        href: '/toptracks',
+        text: 'Top Tracks'
     }
 ]
 

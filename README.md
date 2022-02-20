@@ -18,7 +18,7 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/nikolovlazar/nikolovlazar.com.git
+$ git clone https://github.com/strlrd-29/ouassim.io.git
 $ cd ouassim.io
 $ yarn
 $ yarn dev

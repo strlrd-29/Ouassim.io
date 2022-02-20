@@ -121,6 +121,6 @@ export async function getStaticProps() {
             bookmarks,
             tags
         },
-        revalidate: 60 * 60
+        revalidate: 1
     }
 }
