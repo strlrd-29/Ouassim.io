@@ -24,7 +24,7 @@ const linkRing = (props) => ({
 const theme = extendTheme({
     config: {
         initialColorMode: 'dark',
-        useSystemColorMode: true
+        useSystemColorMode: false
     },
     styles,
     fonts: {
