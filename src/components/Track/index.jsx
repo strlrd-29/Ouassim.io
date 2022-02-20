@@ -1,8 +1,6 @@
 import { Flex, Link, Text, VStack } from '@chakra-ui/react'
 
 export default function Track({ track, ranking, isValidating }) {
-    console.log(track)
-
     return (
         <Flex alignItems="baseline" w="full">
             <Text fontSize="lg" fontWeight="bold">
