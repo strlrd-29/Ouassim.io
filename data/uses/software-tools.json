@@ -1,0 +1,112 @@
+{
+    "tools": [
+        {
+            "title": "Visual Studio Code",
+            "link": "https://code.visualstudio.com/",
+            "description": "Visual Studio Code is a go to text editor for all your coding needs.",
+            "image": "/software/vscode.svg",
+            "category": "development"
+        },
+        {
+            "title": "GitHub",
+            "link": "https://github.com/",
+            "description": "GitHub is a web-based hosting service for version control using Git. It is mostly used for open source projects.",
+            "image": "/software/github.svg",
+            "category": "development"
+        },
+        {
+            "title": "Brave",
+            "link": "https://brave.com/",
+            "description": "Brave is a chromium web browser with built-in privacy settings. Blocks ads and trackers!",
+            "image": "/software/brave.svg",
+            "category": "development"
+        },
+        {
+            "title": "Daily Dev",
+            "link": "https://daily.dev/",
+            "description": "Daily Dev is a blog that covers the latest web development news.",
+            "image": "/software/dailydev.svg",
+            "category": "productivity"
+        },
+        {
+            "title": "Vim",
+            "link": "https://www.vim.org/",
+            "description": "Vim is a highly configurable text editor. It is used for all kinds of text editing, including programming. (Yes, I know how to exit vim 😎. Cool right?)",
+            "image": "/software/vim.svg",
+            "category": "development"
+        },
+        {
+            "title": "Figma",
+            "link": "https://www.figma.com/",
+            "description": "Figma is a free, open-source tool for designing and prototyping interactive interfaces. It is used for designing and prototyping web and mobile apps.",
+            "image": "/software/figma.svg",
+            "category": "design"
+        },
+        {
+            "title": "Notion",
+            "link": "https://www.notion.so/",
+            "description": "Notion is a free, open-source, web-based note-taking app. It is used for taking notes and planning.",
+            "image": "/software/notion.svg",
+            "category": "productivity"
+        },
+        {
+            "title": "Discord",
+            "link": "https://discord.com/",
+            "description": "Discord is the easiest way to talk over voice, video, and text. Talk, chat, hang out, and stay close with your friends and communities",
+            "image": "/software/discord.svg",
+            "category": "productivity"
+        }
+    ],
+    "extensions": [
+        {
+            "title": "Auto Close",
+            "link": "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag",
+            "description": "Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text"
+        },
+        {
+            "title": "Auto Rename",
+            "link": "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag",
+            "description": "Auto rename paired HTML/XML tag"
+        },
+        {
+            "title": "Bracket Pair Colorizer",
+            "link": "https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization",
+            "description": "A customizable extension for colorizing matching brackets"
+        },
+        {
+            "title": "ES7+ React/Redux/React-Native snippets",
+            "link": "https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets",
+            "description": "Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier."
+        },
+        {
+            "title": "Remote - WSL",
+            "link": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl",
+            "description": "Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set."
+        },
+        {
+            "title": "Github Copilot",
+            "link": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
+            "description": "Your AI pair programmer"
+        },
+        {
+            "title": "GitLens — Git supercharged",
+            "link": "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
+            "description": "Supercharge the Git capabilities built into Visual Studio Code"
+        },
+        {
+            "title": "ESlint",
+            "link": "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint",
+            "description": "Integrates ESLint JavaScript into VS Code."
+        },
+        {
+            "title": "Prettier",
+            "link": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
+            "description": "Format code using Prettier."
+        },
+        {
+            "title": "Tailwind CSS IntelliSense",
+            "link": "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
+            "description": "Intelligent Tailwind CSS tooling for VS Code"
+        }
+    ]
+}

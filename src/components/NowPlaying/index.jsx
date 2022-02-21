@@ -29,7 +29,7 @@ function AnimatedBars() {
                     scaleY: 0
                 }}
                 transition={{
-                    yoyo: Infinity,
+                    repeat: Infinity,
                     duration: 1,
                     ease: 'easeInOut'
                 }}
@@ -46,7 +46,7 @@ function AnimatedBars() {
                     scaleY: 0
                 }}
                 transition={{
-                    yoyo: Infinity,
+                    repeat: Infinity,
                     duration: 1.2,
                     ease: 'easeInOut',
                     delay: '0.1s'
@@ -64,7 +64,7 @@ function AnimatedBars() {
                     scaleY: 0
                 }}
                 transition={{
-                    yoyo: Infinity,
+                    repeat: Infinity,
                     duration: 1,
                     ease: 'easeInOut',
                     delay: '0.2s'
