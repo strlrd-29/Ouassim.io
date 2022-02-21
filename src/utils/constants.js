@@ -68,10 +68,6 @@ export const thirdGroup = [
         text: 'Uses'
     },
     {
-        href: '/books',
-        text: 'Books'
-    },
-    {
         href: '/toptracks',
         text: 'Top Tracks'
     }
