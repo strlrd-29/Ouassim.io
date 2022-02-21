@@ -46,10 +46,10 @@ const InlineCode = (props) => (
     <chakra.code
         apply="mdx.code"
         color={useColorModeValue('gray.100', 'gray.900')}
-        bg={useColorModeValue('gray.900', 'gray.100')}
+        bg={useColorModeValue('gray.500', 'gray.200')}
         px={1}
         py={0.5}
-        rounded={{ base: 'none', md: 'md' }}
+        rounded={{ base: 'sm', md: 'md' }}
         {...props}
     />
 )
@@ -96,7 +96,7 @@ const Image = (props) => {
     return (
         <NextImage
             {...props}
-            layout="responsive"
+            layout="intrinsic"
             loading="lazy"
             placeholder="blur"
             blurDataURL
@@ -117,14 +117,14 @@ const Anchor = (props) => {
 }
 
 const MDXComponents = {
-    inlineCode: InlineCode,
+    // inlineCode: InlineCode,
     h1: (props) => <LinkedHeading as="h1" apply="mdx.h1" {...props} />,
     h2: (props) => <LinkedHeading as="h2" apply="mdx.h2" {...props} />,
     h3: (props) => <LinkedHeading as="h3" apply="mdx.h3" {...props} />,
     h4: (props) => <LinkedHeading as="h4" apply="mdx.h4" {...props} />,
     hr: (props) => <chakra.hr apply="mdx.hr" {...props} />,
     strong: (props) => <Box as="strong" fontWeight="semibold" {...props} />,
-    pre: Pre,
+    // pre: Pre,
     kbd: Kbd,
     img: Image,
     br: ({ reset, ...props }) => (

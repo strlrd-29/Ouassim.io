@@ -20,6 +20,7 @@ import Container from '@/components/Container'
 import { MDXRemote } from 'next-mdx-remote'
 import MDXComponents from '@/components/mdx-components'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
+import mdxPrism from 'mdx-prism'
 
 export default function BlogPost({
     title,
@@ -94,7 +95,12 @@ export const getStaticProps = async (ctx) => {
 
     return {
         props: {
-            source: await serialize(content, {}),
+            source: await serialize(content, {
+                mdxOptions: {
+                    remarkPlugins: [require('remark-code-titles')],
+                    rehypePlugins: [mdxPrism]
+                }
+            }),
             readingTime: readingTime(content).text,
             title,
             description,
