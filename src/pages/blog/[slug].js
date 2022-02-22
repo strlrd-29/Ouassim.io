@@ -21,6 +21,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import MDXComponents from '@/components/mdx-components'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 import mdxPrism from 'mdx-prism'
+import LikeButton from '@/components/LikeButton'
 
 export default function BlogPost({
     title,
@@ -69,6 +70,7 @@ export default function BlogPost({
                     </HStack>
                 </VStack>
                 <MDXRemote {...source} components={MDXComponents} />
+                <LikeButton />
             </VStack>
             <ScrollToTopButton />
         </Container>

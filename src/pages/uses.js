@@ -19,7 +19,10 @@ import { ArrowUpRight } from 'phosphor-react'
 
 export default function Uses({ tools, categories, extensions }) {
     return (
-        <Layout>
+        <Layout
+            title="Software 💻"
+            description="A list of my software uses and VSC extensions"
+        >
             <VStack as="section" w="full" alignItems="flex-start" spacing={4}>
                 <Heading size="lg">Software tools.</Heading>
                 <Text fontSize="md">
