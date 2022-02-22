@@ -100,8 +100,8 @@ const Image = (props) => {
             loading="lazy"
             placeholder="blur"
             blurDataURL
-            width={1080}
-            height={810}
+            width={640}
+            height={640}
         />
     )
 }

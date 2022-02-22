@@ -22,11 +22,13 @@ import {
     FACEBOOK_PROFILE,
     INSTAGRAM_PROFILE,
     LINKEDIN_PROFILE,
-    GITHUB_PROFILE
+    GITHUB_PROFILE,
+    POLYWORK_PROFILE
 } from '@/utils/constants'
 
 import ActionButton from '../core/ActionButton'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 const SocialButton = ({ title, icon, href }) => {
     return (
@@ -59,11 +61,20 @@ export default function Hero() {
                     </ActionButton>
                 </NextLink>
                 <HStack>
-                    <SocialButton
-                        title="Facebook"
-                        icon={FacebookLogo}
-                        href={FACEBOOK_PROFILE}
-                    />
+                    <Link
+                        href={POLYWORK_PROFILE}
+                        isExternal
+                        aria-label="Polywork link"
+                        transition="100ms ease-in-out"
+                        _hover={{ color: 'cyan.600' }}
+                    >
+                        <Image
+                            src="/icons/polywork.svg"
+                            height={18}
+                            width={18}
+                            alt="polywork"
+                        />
+                    </Link>
                     <SocialButton
                         title="Instagram"
                         icon={InstagramLogo}
