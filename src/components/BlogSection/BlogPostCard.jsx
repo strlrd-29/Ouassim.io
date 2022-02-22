@@ -14,7 +14,7 @@ export default function BlogPost({ title, description, date, bColor, slug }) {
                     cursor="pointer"
                     border="2px"
                     borderRadius="md"
-                    p={{ base: 1, md: 3 }}
+                    p={{ base: 2, md: 3 }}
                     borderColor={useColorModeValue('gray.700', 'blue.200')}
                     borderWidth={0}
                     boxShadow={useColorModeValue(
@@ -27,10 +27,12 @@ export default function BlogPost({ title, description, date, bColor, slug }) {
                     w="full"
                     transition="all .2s ease-in-out"
                 >
-                    <Heading size="md" mb={4}>
+                    <Heading fontSize={{ base: 'lg', md: 'xl' }} mb={4}>
                         {title}
                     </Heading>
-                    <Text fontSize="lg">{description}</Text>
+                    <Text fontSize={{ base: 'md', md: 'lg' }}>
+                        {description}
+                    </Text>
                     <Text>{date}</Text>
                 </Box>
             </Link>
