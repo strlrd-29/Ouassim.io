@@ -13,7 +13,7 @@ function Layout(props) {
     const meta = {
         title: 'Ouassim - Developer, Designer.',
         description: `Front-end developer, Javascript enthusiast, and in love with React`,
-        image: 'https://ouassim-io.vercel.app/og_image/ouassim.png',
+        image: 'https://ouassim-io.vercel.app/og_image/ouassim.webp',
         type: 'website',
         ...customMeta
     }
@@ -34,7 +34,9 @@ function Layout(props) {
                 <meta property="og:site_name" content="Ouassim Ghribi" />
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:title" content={meta.title} />
+                <meta property="og:image" content={meta.image} />
                 <meta property="og:image:url" content={meta.image} />
+                <meta property="twitter:image" content={meta.image} />
             </Head>
             <Header />
             <Container
