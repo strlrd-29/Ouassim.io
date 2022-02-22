@@ -20,6 +20,7 @@ export default function LikeButton() {
                 isClosable: true
             })
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [hasClicked])
     const heartColor = useColorModeValue('#000', '#fff')
 
