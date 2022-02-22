@@ -35,6 +35,7 @@ function Layout(props) {
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:title" content={meta.title} />
                 <meta property="og:image" content={meta.image} />
+                <meta property="og:image:secure_url" content={meta.image} />
             </Head>
             <Header />
             <Container
